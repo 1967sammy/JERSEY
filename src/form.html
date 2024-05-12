@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>form</title>
+  <link rel="stylesheet" href="form.css" />
+  <style>
+    .cancel-btn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      z-index: 999; /* Ensure the button appears on top */
+      background-color: rgba(248, 3, 3, 0.5);  
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cancel-btn" onclick="navigateToIndex()">Cancel</div>
+  <form id="form1" class="form">
+    <div class="title">Welcome</div>
+    <div class="subtitle">Let's help you shop your Jersey!</div>
+    <div class="input-container ic1">
+      <input id="name" class="input" type="text" placeholder=" " required />
+      <div class="cut"></div>
+      <label for="name" class="placeholder">Full name</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="phone" class="input" type="tel" placeholder=" " required />
+      <div class="cut"></div>
+      <label for="phone" class="placeholder">Phone number</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="email" placeholder=" " required />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">Email</label>
+    </div>
+    <button type="submit" class="submit">Submit</button>
+  </form>
+
+  <script>
+    function navigateToIndex() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
