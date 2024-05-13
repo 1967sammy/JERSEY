@@ -1,4 +1,4 @@
-document.getElementById("cart").addEventListener("click", () => {
+zdocument.getElementById("cart").addEventListener("click", () => {
     document.getElementById("modal").style.display = "flex";
      
   });
