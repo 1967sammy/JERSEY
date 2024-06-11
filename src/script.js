@@ -1,3 +1,8 @@
+
+
+
+
+
 document.getElementById("cart").addEventListener("click", () => {
     document.getElementById("modal").style.display = "flex";
      
